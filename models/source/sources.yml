@@ -1,0 +1,12 @@
+sources:
+    - name: source #schema in databricks
+      database: dbt_test #catalog in databricks
+      schema: source  
+      tables:   #list of tables in databricks
+        - name: fact_sales 
+        - name: fact_returns 
+        - name: dim_date 
+        - name: dim_store 
+        - name: dim_product 
+        - name: dim_customer 
+          
